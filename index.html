@@ -5,81 +5,104 @@
     <meta name="author" content="Emmanuel V. Sanchez" />
     <meta
       name="description"
-      content="This is the First website I built. I am learning how to create better websites using HTML"
+      content="This is the first website I built. I am learning how to create better websites using HTML."
     />
-    <title>Hello World!</title>
+    <title>Welcome to My Page</title>
     <link rel="icon" href="images/Gamer_Catto.png" />
     <style>
-      img.catto {
-        width: 270px;
+      /* General styles */
+      body {
+        background-color: #eaf2e5; /* Light green background */
+        color: #5c7b48; /* Olive green text color */
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
       }
-      img.pfp {
-        width: 20px;
-        border-radius: 10px;
-        float: left;
-        margin-right: 5px;
-      }
+
       h1 {
-        font-family: "Times New Roman";
-        color: #06be2e;
-        text-align: justify;
+        font-family: "Times New Roman", serif;
+        color: #708c5a; /* Deep green for title */
+        text-align: center;
+        margin-top: 30px;
+        font-size: 36px;
       }
 
       p {
-        font-family: "Georgia", monospace;
-        font-size: 12px;
-        text-align: justify;
-
-        color: #06be2e;
+        font-size: 16px;
+        color: #5c7b48; /* Olive green text */
+        line-height: 1.8;
+        text-align: center;
+        padding: 10px 20px;
       }
-      p.username {
-        font-family: "Calibri", monospace;
-        font-size: 15px;
+
+      img.catto {
+        display: block;
+        margin: 20px auto;
+        max-width: 300px; /* Fixed size for consistency */
+        height: auto;
+        border-radius: 10px; /* Adds a soft edge to the image */
+        border: 2px solid #a1b796; /* Green border for emphasis */
+      }
+
+      nav {
+        background-color: #a1b796; /* Medium green for header */
+        padding: 10px 20px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      nav a {
+        color: #eaf2e5; /* Light green text */
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 18px;
         font-weight: bold;
-        text-align: justify;
-
-        color: #06be2e;
+        transition: color 0.3s ease;
       }
-      body {
-        background-color: #000000;
-        color: #222;
+
+      nav a:hover {
+        color: #88a060; /* Sage green on hover */
+      }
+
+      footer {
+        background-color: #a1b796; /* Medium green footer */
+        text-align: center;
+        padding: 10px;
+        color: #eaf2e5; /* Light green text */
+        font-size: 14px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
       }
     </style>
   </head>
 
   <body>
-    <h1>Staring at the Sink</h1>
-    <img class="pfp" src="images/pfp.jpg" alt="Rujuu PFP" />
-    <p class="username">@Ruju.pi</p>
+    <!-- Navigation bar -->
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">My Hobbies</a>
+      <a href="files/stare.html">Surprise</a>
+    </nav>
 
+    <!-- Content -->
+    <h1>Welcome to My Website</h1>
     <p>
-      <br />
-      I don’t know what to feel,<br />
-      I am tired yet hopeful,<br />
-      Driven yet so out of sync,<br />
-      Filled with nothing but regret.
+      Hello! My name is Emmanuel V. Sanchez, and this is the first website I’ve
+      built. I am learning how to create better websites using HTML, CSS, and
+      JavaScript. This page serves as the gateway to exploring my hobbies,
+      thoughts, and creativity.
     </p>
 
     <p>
-      As I sat and ponder what’s going on in my head,<br />
-      I accepted the fact there was nothing to read.<br />
-      Nothing was here, and nothing will fill.<br />
-      Monsters lurk, they won’t stay still.
+      Click on the navigation links above to learn more about me, explore my
+      hobbies, or see a surprise in the <em>Stare</em> section.
     </p>
 
-    <p>
-      In this vast and open world with endless possibilities,<br />
-      I am nothing but a mere speck of dust.<br />
-      It’s not even enough to even cause any allergies,<br />
-      I am just here, and here I am to last.
-    </p>
+    <img class="catto" src="images/neko.png" alt="Catto Image" />
 
-    <p>
-      Like a train, I long for a track;<br />
-      With no clear path ahead, I feel lost.<br />
-      I am lucky to have people behind my back—<br />
-      I am so out of breath, I feel lost.
-    </p>
-    <img class="catto" src="images/neko.png" alt="Catto" />
+    <!-- Footer -->
+    <footer>&copy; 2024 Emmanuel V. Sanchez | My First Website!</footer>
   </body>
 </html>
